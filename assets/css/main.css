@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/exo2/v20/7cH1v4okm5zmbvwkAx_sfcEuiD8jYPWcPg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/exo2/v20/7cH1v4okm5zmbvwkAx_sfcEuiD8jWfWcPg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v14/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA71rCosg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v14/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA72jCosg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v14/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA74TFosg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v14/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA773Fosg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v14/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA79rFosg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v14/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA7_PFosg.ttf) format('truetype');
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+iframe {
+  margin: 0;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+address {
+  font-style: normal;
+}
+iframe {
+  border: none;
+}
+mark {
+  padding: 0;
+  background-color: transparent;
+}
+menu {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+p {
+  margin-bottom: 0;
+}
+section,
+article,
+aside,
+details,
+figcaption,
+figure,
+header,
+footer,
+menu,
+nav {
+  display: block;
+}
+body {
+  background-color: white;
+}
+.page__header {
+  position: absolute;
+  width: 100%;
+  padding-top: 50px;
+  z-index: 3000;
+}
+.page__header h1 {
+  margin-left: 15px;
+}
+@media screen and (min-width: 768px) {
+  .page__header h1 {
+    margin-left: 0;
+    width: fit-content;
+  }
+}
+.page__header .navbar .navbar__hamburguer {
+  margin-right: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.page__header .navbar .navbar__overlay {
+  background-color: #092d23;
+  z-index: 3001;
+  display: none;
+}
+.page__header .navbar .navbar__overlay.open {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: hidden !important;
+  transition: all linear 0.5s;
+}
+.page__header .navbar .navbar__overlay.open .overlay__content {
+  overflow-y: auto !important;
+  height: 90%;
+}
+.page__header .navbar .navbar__overlay.open .overlay__content .overlay__header {
+  margin: 30px 30px 106px 30px;
+}
+.page__header .navbar .navbar__overlay.open .overlay__content .overlay__header .overlay__logo {
+  width: 155px;
+}
+.page__header .navbar .navbar__overlay.open .overlay__content .overlay__header .overlay__close {
+  font-size: 30px;
+  color: white;
+}
+.page__header .navbar .navbar__overlay.open .overlay__content .overlay__menu {
+  margin: 0;
+}
+.page__header .navbar .navbar__overlay.open .overlay__content .overlay__menu .overlay__links a {
+  font: 400 15px sans-serif;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 19px;
+}
+.page__header .navbar .navbar__overlay.open .overlay__content .overlay__menu .overlay__button {
+  margin-top: 40px;
+  margin-bottom: 76px;
+}
+.page__header .navbar .navbar__overlay.open .overlay__content .overlay__menu .overlay__social {
+  width: 130px;
+}
+.page__header .navbar .navbar__overlay.open .overlay__content .overlay__menu .overlay__social a {
+  text-decoration: none;
+  font-size: 23px;
+  color: #deb78f;
+  cursor: pointer;
+}
+.button__whatsapp--floating {
+  display: inline-block;
+  z-index: 5000;
+  position: fixed;
+  bottom: 5px;
+  right: 9px;
+  padding: 7px 12px;
+  background-color: #2acc1e;
+  color: #13172d;
+}
+.button__whatsapp--floating i {
+  font-size: 36px;
+  color: #191d36;
+}
+.button__whatsapp--floating:hover i {
+  color: #FFFFFF;
+}
