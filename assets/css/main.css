@@ -154,7 +154,7 @@ body {
 .page__header {
   position: absolute;
   width: 100%;
-  padding-top: 50px;
+  padding-top: 30px;
   z-index: 3001;
 }
 .page__header h1 {
@@ -167,7 +167,7 @@ body {
   }
 }
 .page__header .logo__theroof img {
-  width: 180px;
+  width: 160px;
 }
 .page__header .navbar__menu .navbar__hamburguer {
   display: flex;
@@ -331,7 +331,7 @@ body {
 .page__banner .banner__content {
   position: absolute;
   width: 80%;
-  top: 300px;
+  top: 280px;
   left: 135px;
   z-index: 3000;
   display: flex;
@@ -355,6 +355,15 @@ body {
   width: 395px;
   font: 400 24px 'Montserrat', sans-serif;
   color: #1D1D1D;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   text-shadow: 5px 5px 10px;
+}
+.page__banner .banner__content .title__content .arrow__down {
+  margin-top: 56px;
+  margin-bottom: 48px;
+}
+.page__enterprise {
+  background-image: url('../img/bg-empreendimento.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
