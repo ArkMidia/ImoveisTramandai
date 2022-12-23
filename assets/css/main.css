@@ -234,6 +234,31 @@ body {
   color: #deb78f;
   cursor: pointer;
 }
+.btn__transparent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 20px 40px;
+  color: #1D1D1D;
+  text-decoration: none;
+  font: 600 22px 'Catamaran', sans-serif;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #1D1D1D;
+  transition: all 0.3s linear;
+}
+.btn__transparent img {
+  margin-right: 20px;
+}
+.btn__transparent:hover {
+  color: white;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  background-color: #1D1D1D;
+}
+.btn__transparent:hover img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
 .button__whatsapp--floating {
   display: inline-block;
   z-index: 5000;
