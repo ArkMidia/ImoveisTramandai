@@ -6,7 +6,7 @@
     position: absolute;
     width: 100%;
     padding-top: 50px;
-    z-index: 3000;
+    z-index: 3001;
 
     h1 {
         margin-left: 15px;
@@ -17,19 +17,31 @@
         }
     }
 
-    
+    .logo__theroof {
+        img {
+            width: 180px;
+        }
+    }
 
-    .navbar {
+    .navbar__menu {
 
         .navbar__hamburguer {
-            margin-right: 15px;
             display: flex;
-            justify-content: flex-end;
+            align-items: baseline;
+            margin-right: 15px;
+
+            img {
+                width: 35px;
+            }
+
+            @media screen and (min-width: 768px) {
+                margin-top: 20px;
+            }
         }
 
         .navbar__overlay {
             background-color: rgb(9, 45, 35);
-            z-index: 3001;
+            z-index: 3002;
             display: none;
         
             &.open {
