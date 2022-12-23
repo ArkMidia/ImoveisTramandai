@@ -366,4 +366,97 @@ body {
   background-image: url('../img/bg-empreendimento.webp');
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 48px;
+}
+.page__enterprise .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page__enterprise .title h2 {
+  font: 400 20px 'Montserrat', sans-serif;
+  color: #85644F;
+  letter-spacing: 2px;
+  width: 430px;
+  line-height: 30px;
+  margin-top: 48px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .page__enterprise .title h2 {
+    margin-top: 80px;
+  }
+}
+.page__enterprise .title h3 {
+  font: 400 32px 'Montserrat', sans-serif;
+  color: #1D1D1D;
+  letter-spacing: 2.2px;
+  text-align: center;
+  margin-bottom: 62px;
+}
+@media screen and (min-width: 768px) {
+  .page__enterprise .title h3 {
+    font-size: 48px;
+    letter-spacing: 3.2px;
+  }
+}
+.page__enterprise .infos {
+  display: flex;
+  justify-content: center;
+}
+.page__enterprise .infos .list__content {
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 30px white;
+  padding: 40px;
+  margin-top: 35px;
+}
+.page__enterprise .infos .list__content .list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.page__enterprise .infos .list__content .list img {
+  width: fit-content;
+  margin-right: 15px;
+}
+.page__enterprise .infos .list__content .list p {
+  font: 500 16px 'Montserrat', sans-serif;
+  color: #1D1D1D;
+  letter-spacing: 1.6px;
+}
+.page__enterprise .infos .list__content .list .icon__elevator {
+  margin-left: 5px;
+}
+.page__enterprise .infos .list__content .rooftop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+.page__enterprise .infos .list__content .rooftop .rooftop__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 322px;
+}
+.page__enterprise .infos .list__content .rooftop .rooftop__content img {
+  width: fit-content;
+  margin-right: 15px;
+}
+.page__enterprise .infos .list__content .rooftop .rooftop__content p {
+  font: 500 20px 'Montserrat', sans-serif;
+  color: #1D1D1D;
+  letter-spacing: 2px;
+}
+@media screen and (min-width: 768px) {
+  .page__enterprise .infos .list__content {
+    max-width: 475px;
+    max-height: 503px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page__enterprise {
+    padding-bottom: 80px;
+  }
 }
