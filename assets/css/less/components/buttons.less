@@ -30,3 +30,28 @@
         }
     }
 }
+
+.btn__black {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 20px 40px;
+    color: white;
+    text-decoration: none;
+    font: 600 28px @fontC;
+    text-transform: uppercase;
+    background-color: #1D1D1D;
+
+    img {
+        margin-right: 20px;
+    }
+
+    .--transition();
+    &:hover {
+        color: white;
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+        background-color: rgba(29, 29, 29, 0.6);
+
+    }
+}

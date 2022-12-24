@@ -259,6 +259,27 @@ body {
 .btn__transparent:hover img {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 }
+.btn__black {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 20px 40px;
+  color: white;
+  text-decoration: none;
+  font: 600 28px 'Catamaran', sans-serif;
+  text-transform: uppercase;
+  background-color: #1D1D1D;
+  transition: all 0.3s linear;
+}
+.btn__black img {
+  margin-right: 20px;
+}
+.btn__black:hover {
+  color: white;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  background-color: rgba(29, 29, 29, 0.6);
+}
 .button__whatsapp--floating {
   display: inline-block;
   z-index: 5000;
@@ -555,4 +576,115 @@ body {
   .page__rooftop {
     padding-bottom: 120px;
   }
+}
+.page__apartments {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-image: url('../img/bg-ap.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page__apartments .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page__apartments .title h2 {
+  font: 400 20px 'Montserrat', sans-serif;
+  color: #85644F;
+  letter-spacing: 2px;
+  width: 430px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.page__apartments .title h3 {
+  font: 600 32px 'Montserrat', sans-serif;
+  color: #1D1D1D;
+  letter-spacing: 2.2px;
+  text-align: center;
+  margin-bottom: 62px;
+}
+@media screen and (min-width: 768px) {
+  .page__apartments .title h3 {
+    font-size: 48px;
+    letter-spacing: 3.2px;
+  }
+}
+.page__apartments .is--desktop .card__ap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: white;
+  border: 1px solid #85644F;
+  height: 212px;
+  margin-bottom: 30px;
+}
+.page__apartments .is--desktop .card__ap img {
+  width: fit-content;
+  margin-bottom: 18px;
+}
+.page__apartments .is--desktop .card__ap p {
+  font: 500 16px 'Montserrat', sans-serif;
+  color: #1D1D1D;
+  letter-spacing: 1.6px;
+  line-height: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .page__apartments .is--desktop .card__ap {
+    margin-bottom: 48px;
+  }
+}
+.page__apartments h4 {
+  font: 600 28px 'Montserrat', sans-serif;
+  color: #1D1D1D;
+  letter-spacing: 2.8px;
+  text-align: center;
+  margin-bottom: 62px;
+  margin-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  .page__apartments h4 {
+    font-size: 32px;
+    letter-spacing: 3.2px;
+  }
+}
+.page__apartments .blueprint__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .page__apartments {
+    padding-top: 62px;
+    padding-bottom: 100px;
+  }
+}
+.page__cta {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-image: url('../img/bg-cta.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page__cta h2 {
+  font: 600 42px 'Montserrat', sans-serif;
+  color: #1D1D1D;
+  letter-spacing: 4.2;
+  line-height: 55px;
+}
+.page__cta h3 {
+  font: 700 42px 'Montserrat', sans-serif;
+  color: #152346;
+  letter-spacing: 4.2;
+  line-height: 55px;
+}
+.page__cta .button {
+  margin-top: 58px;
+  display: flex;
+  justify-content: center;
 }

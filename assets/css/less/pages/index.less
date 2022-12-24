@@ -319,4 +319,128 @@
     }
 }
 
+.page__apartments {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-image: url('../img/bg-ap.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font: 400 20px @fontM;
+            color: #85644F;
+            letter-spacing: 2px;
+            width: 430px;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font: 600 32px @fontM;
+            color: #1D1D1D;
+            letter-spacing: 2.2px;
+            text-align: center;
+            margin-bottom: 62px;
+
+            @media screen and (min-width: 768px) {
+                font-size: 48px;
+                letter-spacing: 3.2px;
+            }
+        }
+    }
+
+    .is--desktop {
+
+        .card__ap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            background-color: white;
+            border: 1px solid #85644F;
+            height: 212px;
+            margin-bottom: 30px;
+
+            img {
+                width: fit-content;
+                margin-bottom: 18px;
+            }
+
+            p {
+                font: 500 16px @fontM;
+                color: #1D1D1D;
+                letter-spacing: 1.6px;
+                line-height: 20px;
+                text-align: center;
+            }
+
+            @media screen and (min-width: 768px) {
+                margin-bottom: 48px;
+            }
+        }
+    }
+
+    h4 {
+        font: 600 28px @fontM;
+        color: #1D1D1D;
+        letter-spacing: 2.8px;
+        text-align: center;
+        margin-bottom: 62px;
+        margin-top: 24px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 32px;
+            letter-spacing: 3.2px;
+        }
+    }
+
+    .blueprint__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 62px;
+        padding-bottom: 100px;
+    }
+}
+
+.page__cta {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-image: url('../img/bg-cta.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2 {
+        font: 600 42px @fontM;
+        color: #1D1D1D;
+        letter-spacing: 4.2;
+        line-height: 55px;
+    }
+
+    h3 {
+        font: 700 42px @fontM;
+        color: #152346;
+        letter-spacing: 4.2;
+        line-height: 55px;
+    }
+
+    .button {
+        margin-top: 58px;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
 
