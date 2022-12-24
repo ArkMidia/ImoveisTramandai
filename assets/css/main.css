@@ -688,3 +688,61 @@ body {
   display: flex;
   justify-content: center;
 }
+.page__energy {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-image: url('../img/bg-sustentabilidade.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page__energy h2 {
+  font: 400 20px 'Montserrat', sans-serif;
+  color: white;
+  letter-spacing: 2px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .page__energy h2 {
+    text-align: left;
+  }
+}
+.page__energy h3 {
+  font: 600 48px 'Catamaran', sans-serif;
+  color: #F6D7B1;
+  margin-bottom: 60px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .page__energy h3 {
+    text-align: left;
+  }
+}
+.page__energy .info {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.page__energy .info img {
+  width: fit-content;
+  margin-right: 15px;
+}
+.page__energy .info .info__detail h4 {
+  font: 600 36px 'Catamaran', sans-serif;
+  color: #F6D7B1;
+  margin-bottom: 15px;
+  line-height: 45px;
+}
+.page__energy .info .info__detail p {
+  font: 400 20px 'Montserrat', sans-serif;
+  color: white;
+  letter-spacing: 2;
+  line-height: 25px;
+}
+@media screen and (min-width: 768px) {
+  .page__energy {
+    padding-top: 62px;
+    padding-bottom: 84px;
+  }
+}
