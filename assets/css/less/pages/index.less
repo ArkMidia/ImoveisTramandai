@@ -167,7 +167,6 @@
         letter-spacing: 2px;
         width: 430px;
         line-height: 30px;
-        margin-top: 48px;
         text-align: center;
         margin-bottom: 24px;
 
@@ -200,6 +199,36 @@
             text-align: left;
             max-width: 450px;
         }
+    }
+
+    .enterprises {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card__enterprise {
+
+            color: #1d1d1d;
+            font: 600 18px @fontM;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .photo {
+                max-width: 150px;
+                margin-bottom: 10px;
+            }
+
+            &:hover {
+                color: #214A4D;
+                cursor: pointer;
+
+                .photo {
+                    opacity: .8;
+                }
+            }
+        } 
     }
 
     @media screen and (min-width: 768px) {

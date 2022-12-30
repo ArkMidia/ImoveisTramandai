@@ -15,13 +15,7 @@
             margin-left: 0;
             width: fit-content;
         }
-    }
-
-    .logo__theroof {
-        img {
-            width: 160px;
-        }
-    }
+    }    
 
     .navbar__menu {
 
@@ -34,13 +28,17 @@
                 width: 35px;
             }
 
+            &:hover {
+                cursor: pointer;
+            }
+
             @media screen and (min-width: 768px) {
                 margin-top: 20px;
             }
         }
 
         .navbar__overlay {
-            background-color: rgb(9, 45, 35);
+            background-color: #214A4D;
             z-index: 3002;
             display: none;
         
@@ -81,10 +79,16 @@
                         
                         .overlay__links {
                             a {
-                                font: 400 15px sans-serif;
+                                font: 500 15px @fontM;
                                 color: white;
                                 text-decoration: none;
                                 margin-bottom: 19px;
+
+                                &:hover {
+                                    color: white;
+                                    cursor: pointer;
+                                    text-decoration: underline;
+                                }
                             }
                         }
                         
@@ -94,16 +98,27 @@
                         }
 
                         .overlay__social {
-                            width: 130px;
+                            width: 250px;
 
-                            a {
-                                text-decoration: none;
-                                font-size: 23px;
-                                color: rgb(222, 183, 143);
+                            a {                                
                                 cursor: pointer;
+
+                                img {
+                                    width: 25px;
+                                }
+
+                                &:hover {
+                                    img {                                        
+                                        filter: brightness(0) saturate(100%) invert(56%) sepia(5%) saturate(3693%) hue-rotate(130deg) brightness(98%) contrast(87%);
+                                    }
+                                }
                             }
                         }
                     }
+                }
+
+                @media screen and (min-width: 768px) {
+                    width: 30%;
                 }
             } 
         }

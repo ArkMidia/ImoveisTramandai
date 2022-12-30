@@ -173,9 +173,6 @@ body {
     width: fit-content;
   }
 }
-.page__header .logo__theroof img {
-  width: 160px;
-}
 .page__header .navbar__menu .navbar__hamburguer {
   display: flex;
   align-items: baseline;
@@ -184,13 +181,16 @@ body {
 .page__header .navbar__menu .navbar__hamburguer img {
   width: 35px;
 }
+.page__header .navbar__menu .navbar__hamburguer:hover {
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
   .page__header .navbar__menu .navbar__hamburguer {
     margin-top: 20px;
   }
 }
 .page__header .navbar__menu .navbar__overlay {
-  background-color: #092d23;
+  background-color: #214A4D;
   z-index: 3002;
   display: none;
 }
@@ -223,23 +223,36 @@ body {
   margin: 0;
 }
 .page__header .navbar__menu .navbar__overlay.open .overlay__content .overlay__menu .overlay__links a {
-  font: 400 15px sans-serif;
+  font: 500 15px 'Montserrat', sans-serif;
   color: white;
   text-decoration: none;
   margin-bottom: 19px;
+}
+.page__header .navbar__menu .navbar__overlay.open .overlay__content .overlay__menu .overlay__links a:hover {
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
 }
 .page__header .navbar__menu .navbar__overlay.open .overlay__content .overlay__menu .overlay__button {
   margin-top: 40px;
   margin-bottom: 76px;
 }
 .page__header .navbar__menu .navbar__overlay.open .overlay__content .overlay__menu .overlay__social {
-  width: 130px;
+  width: 250px;
 }
 .page__header .navbar__menu .navbar__overlay.open .overlay__content .overlay__menu .overlay__social a {
-  text-decoration: none;
-  font-size: 23px;
-  color: #deb78f;
   cursor: pointer;
+}
+.page__header .navbar__menu .navbar__overlay.open .overlay__content .overlay__menu .overlay__social a img {
+  width: 25px;
+}
+.page__header .navbar__menu .navbar__overlay.open .overlay__content .overlay__menu .overlay__social a:hover img {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(5%) saturate(3693%) hue-rotate(130deg) brightness(98%) contrast(87%);
+}
+@media screen and (min-width: 768px) {
+  .page__header .navbar__menu .navbar__overlay.open {
+    width: 30%;
+  }
 }
 .btn__transparent {
   display: flex;
@@ -286,6 +299,28 @@ body {
   color: white;
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
   background-color: rgba(33, 74, 77, 0.8);
+}
+.btn__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 15px 30px;
+  color: #214a4d;
+  text-decoration: none;
+  font: 600 18px 'Catamaran', sans-serif;
+  text-transform: uppercase;
+  background-color: white;
+  transition: all 0.3s linear;
+}
+.btn__nav img {
+  margin-right: 20px;
+  width: 20px;
+}
+.btn__nav:hover {
+  color: #214a4d;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
 }
 .page__footer {
   padding-top: 48px;
@@ -571,7 +606,6 @@ body {
   letter-spacing: 2px;
   width: 430px;
   line-height: 30px;
-  margin-top: 48px;
   text-align: center;
   margin-bottom: 24px;
 }
@@ -605,6 +639,30 @@ body {
     text-align: left;
     max-width: 450px;
   }
+}
+.home__enterprises .enterprises {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home__enterprises .enterprises .card__enterprise {
+  color: #1d1d1d;
+  font: 600 18px 'Montserrat', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home__enterprises .enterprises .card__enterprise .photo {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+.home__enterprises .enterprises .card__enterprise:hover {
+  color: #214A4D;
+  cursor: pointer;
+}
+.home__enterprises .enterprises .card__enterprise:hover .photo {
+  opacity: 0.8;
 }
 @media screen and (min-width: 768px) {
   .home__enterprises {

@@ -55,3 +55,29 @@
 
     }
 }
+
+.btn__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 15px 30px;
+    color: rgb(33, 74, 77);
+    text-decoration: none;
+    font: 600 18px @fontC;
+    text-transform: uppercase;
+    background-color: white;
+
+    img {
+        margin-right: 20px;
+        width: 20px;
+    }
+
+    .--transition();
+    &:hover {
+        color: rgb(33, 74, 77);
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+
+    }
+}
