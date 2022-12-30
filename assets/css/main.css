@@ -287,6 +287,130 @@ body {
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
   background-color: rgba(33, 74, 77, 0.8);
 }
+.page__footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-image: url('../img/bg-footer.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page__footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.page__footer .contact .phone {
+  margin-bottom: 22px;
+}
+.page__footer .contact .phone a {
+  display: flex;
+  align-items: center;
+  font: 400 18px 'Catamaran', sans-serif;
+  color: #1d1d1d;
+  letter-spacing: 1.8px;
+}
+.page__footer .contact .phone a img {
+  width: 25px;
+  margin-right: 10px;
+}
+.page__footer .contact .phone a:hover {
+  color: #214A4D;
+  cursor: pointer;
+  text-decoration: none;
+}
+.page__footer .contact .phone a:hover img {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(5%) saturate(3693%) hue-rotate(130deg) brightness(98%) contrast(87%);
+}
+.page__footer .contact .mail a {
+  display: flex;
+  align-items: center;
+  font: 400 16px 'Catamaran', sans-serif;
+  color: #1d1d1d;
+  letter-spacing: 1.6px;
+  text-decoration: underline;
+}
+.page__footer .contact .mail a img {
+  width: 25px;
+  margin-right: 10px;
+}
+.page__footer .contact .mail a:hover {
+  color: #214A4D;
+  cursor: pointer;
+}
+.page__footer .contact .mail a:hover img {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(5%) saturate(3693%) hue-rotate(130deg) brightness(98%) contrast(87%);
+}
+.page__footer .links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.page__footer .links .social__links {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+  margin-top: 8px;
+}
+.page__footer .links .social__links a img {
+  width: 30px;
+}
+.page__footer .links .social__links a:hover img {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(5%) saturate(3693%) hue-rotate(130deg) brightness(98%) contrast(87%);
+}
+.page__footer .maps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.page__footer .maps .location {
+  margin-bottom: 28px;
+}
+.page__footer .maps .location a {
+  display: flex;
+  align-items: center;
+  font: 400 16px 'Catamaran', sans-serif;
+  color: #1d1d1d;
+  letter-spacing: 1.6px;
+  text-decoration: none;
+}
+.page__footer .maps .location a img {
+  width: 25px;
+  margin-right: 10px;
+}
+.page__footer .maps .location a:hover {
+  color: #214A4D;
+  cursor: pointer;
+}
+.page__footer .maps .location a:hover img {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(5%) saturate(3693%) hue-rotate(130deg) brightness(98%) contrast(87%);
+}
+.page__footer .copyrights {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  border-top: 1px solid #214A4D;
+  margin-top: 48px;
+}
+.page__footer .copyrights .tramandai__copy {
+  font: 400 14px 'Catamaran', sans-serif;
+  color: #1d1d1d;
+}
+.page__footer .copyrights .ark__copy {
+  display: flex;
+  align-items: center;
+  font: 400 14px 'Catamaran', sans-serif;
+  color: #1d1d1d;
+}
+.page__footer .copyrights .ark__copy a {
+  margin-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .page__footer {
+    padding-top: 82px;
+    padding-bottom: 60px;
+  }
+}
 .button__whatsapp--floating {
   display: inline-block;
   z-index: 5000;
