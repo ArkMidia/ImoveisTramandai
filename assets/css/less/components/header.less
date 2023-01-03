@@ -10,10 +10,17 @@
 
     h1 {
         margin-left: 15px;
+
+        img {
+            width: 180px;
+        }
         
         @media screen and (min-width: 768px) {
             margin-left: 0;
-            width: fit-content;
+
+            img {
+                width: fit-content;
+            }
         }
     }    
 
@@ -22,6 +29,7 @@
         .navbar__hamburguer {
             display: flex;
             align-items: baseline;
+            justify-content: flex-end;
             margin-right: 15px;
 
             img {

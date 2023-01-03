@@ -7,15 +7,16 @@
     align-items: center;
     justify-content: center;
     width: fit-content;
-    padding: 20px 40px;
+    padding: 20px 25px;
     color: #214A4D;
     text-decoration: none;
-    font: 700 22px @fontC;
+    font: 700 18px @fontC;
     text-transform: uppercase;
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid #214A4D;
 
     img {
+        width: 27px;
         margin-right: 20px;
     }
 
@@ -27,6 +28,15 @@
 
         img {
             filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+        }
+    }
+
+    @media screen and (min-width: 600px) {
+        font-size: 22px;
+        padding: 20px 40px;
+
+        img {
+            width: fit-content;
         }
     }
 }
