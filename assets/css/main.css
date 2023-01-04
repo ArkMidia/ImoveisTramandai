@@ -1175,9 +1175,9 @@ body {
 }
 .page__banner .banner__content {
   position: absolute;
-  width: 80%;
-  top: 280px;
-  left: 135px;
+  width: 100%;
+  top: 100px;
+  left: 50%;
   z-index: 3000;
   display: flex;
   flex-direction: column;
@@ -1187,6 +1187,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.page__banner .banner__content .title__content .logo__theroof {
+  margin-bottom: 100px;
 }
 .page__banner .banner__content .title__content h2 {
   text-align: center;
@@ -1206,6 +1209,12 @@ body {
 .page__banner .banner__content .title__content .arrow__down {
   margin-top: 56px;
   margin-bottom: 48px;
+}
+@media screen and (min-width: 600px) {
+  .page__banner .banner__content {
+    top: 30px;
+    left: 30px;
+  }
 }
 .page__enterprise {
   background-image: url('../img/bg-empreendimento.webp');
