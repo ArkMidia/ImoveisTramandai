@@ -295,6 +295,7 @@
         margin-bottom: 0;
         text-transform: uppercase;
         max-width: 100%;
+        text-shadow: 0 0 30px rgb(255, 255, 255);
     }
 
     @media screen and (min-width: 768px) {
@@ -307,39 +308,65 @@
 .home__cta {
     padding-top: 48px;
     padding-bottom: 48px;
-    background-image: url('../img/bg-cta.webp');
+    background-image: url('../img/bg-cta-mobile.webp');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom -138px left 0;
 
     h2 {
-        font: 600 42px @fontM;
+        font: 600 32px @fontM;
         color: #1D1D1D;
-        letter-spacing: 4.2;
-        line-height: 55px;
+        letter-spacing: 3.2px;
+        line-height: 45px;
+        text-align: center;
+        margin-bottom: 24px;
+
+        @media screen and (min-width: 600px) {
+            text-align: left;
+            font: 42px;
+            letter-spacing: 4.2px;
+            line-height: 55px;
+            margin-bottom: 0;
+        }
     }
 
     h3 {
-        font: 700 42px @fontM;
+        font: 800 28px @fontC;
         color: #214A4D;
-        letter-spacing: 4.2;
-        line-height: 55px;
+        letter-spacing: 2.8px;
+        line-height: 45px;
+        text-align: center;
+
+        @media screen and (min-width: 600px) {
+            text-align: left;
+            font-size: 42px;
+            letter-spacing: 4.2px;
+            line-height: 55px;
+            margin-bottom: 0;
+        }
     }
 
     .button {
-        margin-top: 58px;
+        margin-top: 32px;
         display: flex;
         justify-content: center;
+
+        @media screen and (min-width: 600px) {
+            margin-top: 58px;
+        }
     }
     
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 600px) {
         padding-top: 100px;
         padding-bottom: 100px;
+        background-image: url('../img/bg-cta.webp');
+        background-position: bottom 0 left 0;
     }
 }
 
 .home__about {
     padding-top: 48px;
-    background-image: url('../img/bg-about.webp');
+    background-image: url('../img/bg-about-mobile.webp');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -360,38 +387,55 @@
         }
 
         h3 {
-            font: 700 48px @fontR;
+            font: 700 28px @fontR;
             color: #214A4D;
-            letter-spacing: 2.8px;
+            letter-spacing: 1.8px;
             text-align: center;
             text-transform: uppercase;
+
+            @media screen and (min-width: 600px) {
+                font-size: 48px;
+                letter-spacing: 2.8px;
+            }
         }
 
         img {
-            width: fit-content;
-            margin-bottom: 18px;
+            width: 300px;
+
+            @media screen and (min-width: 600px) {
+                width: fit-content;
+                margin-bottom: 18px;
+            }
         }
 
         h4 {
-            font: 400 48px @fontI;
+            font: 400 38px @fontI;
             color: #1D1D1D;
             text-align: center;
-            margin-bottom: 62px;
+            margin-bottom: 48px;
+            margin-top: 10px;
+
+            @media screen and (min-width: 600px) {
+                font-size: 48px;
+                margin-bottom: 62px;
+            }
         }
     }
 
     .team {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        margin-bottom: 62px;
+        margin-bottom: 32px;
 
         img {
-            margin-right: 18px;
+            margin-bottom: 18px;
         }
 
         .team__info {
             display: flex;
             flex-direction: column;
+            align-items: center;
 
             .name {
                 font: 700 20px @fontM;
@@ -424,38 +468,68 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                width: 142px;
+                width: 155px;
 
                 a {
+                    img {
+                        width: 32px;
+                    }
+
                     &:hover {
                         cursor: pointer;
 
-                        img {
+                        img {                            
                             filter: brightness(0) saturate(100%) invert(56%) sepia(5%) saturate(3693%) hue-rotate(130deg) brightness(98%) contrast(87%);
                         }
                     }
+
+                    @media screen and (min-width: 600px) {
+                        img {
+                            width: fit-content;
+                        }
+                    }
+                }
+
+                @media screen and (min-width: 600px) {
+                    width: 142px;
                 }
             }
+
+            @media screen and (min-width: 600px) {
+                align-items: flex-start;
+            }
         }
-    
+        @media screen and (min-width: 600px) {
+            flex-direction: row;
+            margin-bottom: 62px;
+
+            img {
+                margin-right: 18px;
+                margin-bottom: 0;
+            }
+        }
     }
 
     .text {
-        font: 400 18px @fontM;
+        font: 400 14px @fontM;
         color: #1d1d1d;
-        letter-spacing: 3.0;
-        line-height: 45px;
+        letter-spacing: 2.0px;
+        line-height: 35px;
         text-align: center;
-        margin-top: 18px;
 
         @media screen and (min-width: 768px) {
             text-align: left;
+            font-size: 18px;
+            letter-spacing: 3.0px;
+            line-height: 45px;
+            margin-top: 18px;
         }
     }
 
     @media screen and (min-width: 768px) {
         padding-top: 82px;
         padding-bottom: 20px;
+        background-image: url('../img/bg-about.webp');
     }
 }
 
