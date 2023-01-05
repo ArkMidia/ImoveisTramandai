@@ -719,7 +719,8 @@ body {
   .home__banner .banner__content .title__content h2 {
     font-size: 42px;
     font-weight: 600;
-    letter-spacing: 3.2px;
+    letter-spacing: 3.8px;
+    line-height: 50px;
   }
 }
 .home__banner .banner__content .title__content p {
