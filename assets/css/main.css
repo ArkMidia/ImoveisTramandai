@@ -1560,7 +1560,7 @@ body {
 }
 @media screen and (min-width: 600px) {
   .page__apartments .is--desktop {
-    display: block;
+    display: flex;
   }
   .page__apartments .is--desktop .card__ap {
     display: flex;
@@ -1691,7 +1691,7 @@ body {
   .page__energy h3 {
     text-align: left;
     font-size: 48px;
-    margin-bottom: 60px;
+    margin-bottom: 42px;
   }
 }
 .page__energy .photo {
