@@ -823,6 +823,11 @@ body {
     font-size: 45px;
   }
 }
+.home__enterprises .click {
+  font: 500 18px 'Montserrat', sans-serif;
+  color: #1D1D1D;
+  text-align: center;
+}
 .home__enterprises h2 {
   font: 400 18px 'Montserrat', sans-serif;
   color: #214A4D;
@@ -1299,11 +1304,6 @@ body {
     letter-spacing: 3.2px;
     margin-bottom: 62px;
   }
-}
-.page__enterprise .photo p {
-  font: 500 18px 'Montserrat', sans-serif;
-  color: #1D1D1D;
-  text-align: center;
 }
 .page__enterprise .infos {
   display: flex;
