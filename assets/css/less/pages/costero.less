@@ -2,96 +2,27 @@
 
 @import "../base/_pallete.less";
 
-.page__banner {
-    position: relative;
-
-    .owl-carousel.owl-theme.banner__carousel {
-        
-        .owl-nav {
-            display: none;
-
-            @media screen and (min-width: 600px) {
-                display: flex;
-                justify-content: space-between;
-                height: 86px;
-                width: 100%;
-                position: absolute;
-                top: calc(50% - 43px);
-                left: 0;
-                z-index: 3001;
-        
-                .owl-prev {
-                    margin: 0;
-                    width: 64px;
-                    height: 86px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    color: #1D1D1D;
-                    background-color: rgba(255, 255, 255, 0.3);
-                    border-radius: 0;
-                    
-                }
-                
-                .owl-next {
-                    width: 64px;
-                    height: 86px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    color: #1D1D1D;
-                    background-color: rgba(255, 255, 255, 0.3);
-                    border-radius: 0;
-                    
-                }
-        
-                .owl-prev,
-                .owl-next {
-                    margin: -1px;
-                                
-                    &:hover {
-                        border: 1px solid #fff;
-                        color: #fff;
-                    }
-        
-                    span {
-                        font-size: 45px;
-                    }
-                }
-        
-                @media screen and (min-width: 768px) {
-                    right: 21px;
-                }
-            }
-        }
-    }
+.costero__banner {
+    position: relative;    
 
     .banner__content {
         position: absolute;
         width: 100%;
-        top: 120px;        
+        top: 330px;        
         z-index: 3000;
         display: flex;
         flex-direction: column;
         align-items: center;
+        
 
         .title__content {
             display: flex;
             flex-direction: column;
-            align-items: center;
-
-            .logo__theroof {
-                margin-bottom: 62px;
-                width: 150px;
-
-                @media screen and (min-width: 600px) {
-                    margin-bottom: 100px;
-                }
-            }
+            align-items: center;           
 
             h2 {
                 text-align: center;
-                font: 500 32px @fontM;
+                font: 500 30px @fontM;
                 color: #1D1D1D;
                 letter-spacing: 2px;
                 margin-bottom: 15px;
@@ -99,6 +30,7 @@
                 @media screen and (min-width: 600px) {
                     font-size: 42px;
                     letter-spacing: 3.2px;
+                    text-align: left;
                 }
             }
 
@@ -119,6 +51,7 @@
                     padding-left: 0;
                     padding-right: 0;
                     margin-bottom: 32px;
+                    text-align: left; 
                 }
             }
 
@@ -126,18 +59,24 @@
                 margin-top: 56px;
                 margin-bottom: 48px;
             }
+
+            @media screen and (min-width: 600px) {
+                align-items: flex-start; 
+            }
         }
 
         @media screen and (min-width: 600px) {
-            top: 30px;
-            left: 130px;
-            width: 80%;
+            top: 340px;
+            left: 50px;
+            width: 100%;
+            margin-left: 100px;
+            align-items: flex-start;
         }
     }
 }
 
-.page__enterprise {
-    background-image: url('../img/bg-empreendimento-mobile.webp');
+.costero__enterprise {
+    background-image: url('../img/costero/bg-empreendimento-mobile.png');
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 48px;
@@ -150,14 +89,13 @@
 
         h2 {
             font: 400 18px @fontM;
-            color: #85644F;
+            color: #ffffff;
             letter-spacing: 1.8px;            
             line-height: 30px;
             text-align: center;
             margin-bottom: 15px;
 
-            @media screen and (min-width: 768px) {
-                margin-top: 80px;
+            @media screen and (min-width: 768px) {                
                 width: 430px;
                 font-size: 20px;
                 letter-spacing: 2px; 
@@ -176,14 +114,6 @@
                 letter-spacing: 3.2px;
                 margin-bottom: 62px;
             }
-        }
-    }
-
-    .photo {
-        p {
-            font: 500 18px @fontM;
-            color: #1D1D1D;
-            text-align: center;
         }
     }
 
@@ -262,30 +192,29 @@
             }
         }
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 600px) {
+        padding-top: 62px;
         padding-bottom: 120px;
-        background-image: url('../img/bg-empreendimento.webp');
+        background-image: url('../img/costero/bg-empreendimento.webp');
     }
 }
 
-.page__rooftop {    
+.costero__leisure {    
     padding-bottom: 48px;
     padding-top: 48px;
-    background-image: url('../img/bg-rooftop-mobile.webp');
+    background-image: url('../img/costero/bg-lazer-mobile.webp');
     background-repeat: no-repeat;
     background-size: cover;
 
     h2 {
         font: 400 18px @fontM;
-        color: #85644F;
+        color: #FFFFFF;
         letter-spacing: 1.8px;        
         line-height: 25px;
         text-align: center;
         margin-bottom: 15px;
 
-        @media screen and (min-width: 768px) {            
-            text-align: left;
-            width: 430px;
+        @media screen and (min-width: 768px) {
             font-size: 20px;
             letter-spacing: 2px;
             line-height: 30px;
@@ -300,19 +229,19 @@
         margin-bottom: 32px;
 
         @media screen and (min-width: 768px) {
-            font-size: 64px;
+            font-size: 48px;
             letter-spacing: 4.2px;
-            text-align: left;
             margin-bottom: 62px;
         }
     }
 
-    .rooftop__content {
-        flex-direction: column-reverse;
+    .leisure__content {
+        flex-direction: column;
 
         .list__content {
             margin-top: 30px;
             margin-left: 20px;
+            margin-bottom: 48px;
 
             .list {
                 display: flex;
@@ -334,10 +263,12 @@
             @media screen and (min-width: 600px) {
                 margin-top: 0;
                 margin-left: 0;
+                margin-bottom: 0;
+                margin-left: 98px;
             }
         }
 
-        .owl-carousel.owl-theme.rooftop__carousel {
+        .owl-carousel.owl-theme.leisure__carousel {
             .owl-nav {
                 display: flex;
                 justify-content: space-between;
@@ -356,7 +287,7 @@
                     justify-content: center;
                     align-items: center;
                     color: #1D1D1D;
-                    background-color: rgba(255, 255, 255, 0.3);
+                    background-color: rgba(242, 182, 128, 0.5);
                     border-radius: 0;
                     
                     @media screen and (min-width: 600px) {
@@ -372,7 +303,7 @@
                     justify-content: center;
                     align-items: center;
                     color: #1D1D1D;
-                    background-color: rgba(255, 255, 255, 0.3);
+                    background-color: rgba(242, 182, 128, 0.5);
                     border-radius: 0;
 
                     @media screen and (min-width: 600px) {
@@ -411,18 +342,19 @@
         }
     }
 
-    @media screen and (min-width: 768px) {   
-        background-image: url('../img/bg-rooftop.webp');     
+    @media screen and (min-width: 600px) {   
+        background-image: url('../img/costero/bg-lazer.webp');     
         padding-bottom: 120px;
     }
 }
 
-.page__apartments {
+.costero__apartments {
     padding-top: 48px;
     padding-bottom: 48px;
-    background-image: url('../img/bg-ap-mobile.webp');
+    background-image: url('../img/costero/bg-ap-mobile.webp');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;    
+    background-color: #505769;
 
     .title {
         display: flex;
@@ -431,7 +363,7 @@
 
         h2 {
             font: 400 16px @fontM;
-            color: #85644F;
+            color: #505769;
             letter-spacing: 1.6px;            
             line-height: 25px;
             text-align: center;
@@ -472,7 +404,7 @@
                 justify-content: center;
                 padding: 30px;
                 background-color: white;
-                border: 1px solid #85644F;
+                border: 1px solid #505769;
                 height: 212px;
                 margin-bottom: 30px;
 
@@ -498,7 +430,7 @@
 
     .is--mobile {
 
-        .owl-carousel.owl-theme.apartments__carousel {
+        .owl-carousel.owl-theme.apcostero__carousel {
 
             .owl-dots {
             
@@ -507,12 +439,12 @@
                         width: 10px;
                         height: 10px;
                         background-color: transparent;
-                        border: 1px solid #85644F;
+                        border: 1px solid #F1B87E;
                     }
             
                     &.active {
                         span {
-                            background-color: #85644F;
+                            background-color: #F1B87E;
                         }
                     }
                 }
@@ -525,7 +457,7 @@
                 justify-content: center;
                 padding: 30px;
                 background-color: white;
-                border: 1px solid #85644F;
+                border: 1px solid #505769;
                 height: 212px;
                 width: 270px;
                 margin-bottom: 10px;
@@ -556,16 +488,16 @@
 
     h4 {
         font: 600 24px @fontM;
-        color: #1D1D1D;
+        color: #F2B680;
         letter-spacing: 2.4px;
         text-align: center;
         margin-bottom: 32px;
-        margin-top: 32px;
+        margin-top: 350px;
 
         @media screen and (min-width: 768px) {
-            font-size: 32px;
+            font-size: 48px;
             letter-spacing: 3.2px;
-            margin-top: 24px;
+            margin-top: 506px;
             margin-bottom: 62px;
         }
     }
@@ -578,118 +510,53 @@
     }
 
     @media screen and (min-width: 768px) {
-        background-image: url('../img/bg-ap.webp');
+        background-image: url('../img/costero/bg-apartments.webp');
         padding-top: 62px;
         padding-bottom: 100px;
+        background-position: left 0 top -80px;
+        background-size: auto;
     }
 }
 
-.page__energy {
+.costero__location {
+    background-image: url('../img/costero/bg-location-mobile.png');
+    background-color: #505769;
     padding-top: 48px;
     padding-bottom: 48px;
-    background-image: url('../img/bg-sustentabilidade-mobile.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
 
-    h2 {
-
-        font: 400 20px @fontM;
+    p {
+        font: 400 16px @fontM;
         color: white;
-        letter-spacing: 2px;
-        line-height: 30px;
+        line-height: 35px;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
         text-align: center;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
 
-        @media screen and (min-width: 768px) {            
-            text-align: left;
+        span {
+            text-decoration: underline;
+            font-weight: 600;
         }
-    }
 
-    h3 {
-        font: 600 36px @fontC;
-        color: #F6D7B1;
-        margin-bottom: 32px;
-        text-align: center;        
-
-        @media screen and (min-width: 768px) {            
-            text-align: left;
-            font-size: 48px;
-            margin-bottom: 42px;
-        }
-    }
-
-    .photo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            width: 300px;
-            margin-bottom: 20px;
-
-            @media screen and (min-width: 600px) {
-                width: auto;
-                margin-bottom: 0;
-            }
-        }
-    }
-
-    .content {
-        margin-top: 25px;
-
-        .info {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 30px;
-            margin-left: 20px;
-            margin-right: 20px;
-
-            img {
-                width: fit-content;
-                margin-right: 15px;
-            }
-
-            .info__detail {
-                h4 {
-                    font: 600 28px @fontC;
-                    color: #F6D7B1;
-                    margin-bottom: 15px;
-                    line-height: 36px;
-
-                    @media screen and (min-width: 600px) {
-                        font-size: 36px;
-                        line-height: 45px;
-                    }
-                }
-
-                p {
-                    font: 400 16px @fontM;
-                    color: white;
-                    letter-spacing: 2.0;
-                    line-height: 25px;
-
-                    @media screen and (min-width: 600px) {
-                        font-size: 20px;
-                        line-height: 30px;
-                    }
-                }
-            }            
-        }
         @media screen and (min-width: 600px) {
-            margin-top: 0;
-            margin-left: 0;
-            margin-right: 0;
+            text-align: left;
+            font-size: 20px;
+            letter-spacing: 2.2px;
+            line-height: 45px;
+            margin-bottom: 0;
         }
     }
 
-    @media screen and (min-width: 768px) {
-        background-image: url('../img/bg-sustentabilidade.webp');
+    @media screen and (min-width: 600px) {
+        background-image: url('../img/costero/bg-location.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
         padding-top: 62px;
-        padding-bottom: 84px;
+        padding-bottom: 62px;
     }
 }
 
-.page__cta {
+.costero__cta {
     padding-top: 48px;
     padding-bottom: 48px;
     background-image: url('../img/bg-cta-mobile.webp');
@@ -716,7 +583,7 @@
 
     h3 {
         font: 800 28px @fontC;
-        color: #214A4D;
+        color: #F2B680;
         letter-spacing: 2.8px;
         line-height: 45px;
         text-align: center;
@@ -731,24 +598,24 @@
     }
 
     .payment {
-        border: 3px solid #85644F;
+        border: 3px solid #505769;
         margin-top: 24px;
         margin-right: 15px;
         margin-left: 15px; 
-        box-shadow: 0 0 20px 10px white, inset 0 0 20px 10px white;       
+        box-shadow: 0 0 20px 10px white, inset 0 0 20px 10px white; 
+        padding-top: 24px;      
 
         p {
             font: 600 24px @fontC;
             color: #1D1D1D;
             letter-spacing: 2.4px;
             line-height: 40px;
-            text-align: center;
-            margin-top: 24px;            
+            text-align: center;         
 
             &.strong {
                 font-weight: 800;
                 text-transform: uppercase;
-                color: #1d1d1d;
+                color: #505769;
                 margin-bottom: 24px;
             }
 
@@ -756,12 +623,14 @@
                 font: 38px;
                 letter-spacing: 3.8px;
                 line-height: 45px;
-                margin-bottom: 24px;
+                margin-bottom: 16px;
                 margin-right: -15px;
                 margin-left: -15px; 
 
                 &.strong {
                     margin-top: 0;
+                    color: #505769;
+                    margin-bottom: 24px;
                 }
             }
         }
@@ -773,7 +642,7 @@
         justify-content: center;
 
         @media screen and (min-width: 600px) {
-            margin-top: 25px;
+            margin-top: 32px;
         }
     }
     
